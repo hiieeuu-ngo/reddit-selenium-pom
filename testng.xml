@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RedditTests" parallel="tests" thread-count="2">
+    <test name="ChromeTests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.RedditTitleTest"/>
+            <class name="tests.RedditLoginTest"/>
+        </classes>
+    </test>
+
+    <test name="FirefoxTests">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="tests.RedditTitleTest"/>
+            <class name="tests.RedditLoginTest"/>
+        </classes>
+    </test>
+</suite>

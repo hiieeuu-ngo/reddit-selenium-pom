@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RedditTestsSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeLoginTest(failed)">
+    <parameter name="password" value="YOUR_PASSWORD"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="username" value="YOUR_USERNAME"/>
+    <classes>
+      <class name="tests.RedditLoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.RedditLoginTest -->
+    </classes>
+  </test> <!-- ChromeLoginTest(failed) -->
+  <test thread-count="5" name="FirefoxLoginTest(failed)">
+    <parameter name="password" value="YOUR_PASSWORD"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="username" value="YOUR_USERNAME"/>
+    <classes>
+      <class name="tests.RedditLoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.RedditLoginTest -->
+    </classes>
+  </test> <!-- FirefoxLoginTest(failed) -->
+</suite> <!-- Failed suite [RedditTestsSuite] -->

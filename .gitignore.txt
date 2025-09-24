@@ -1,0 +1,50 @@
+# ========================
+# Java / Build Files
+# ========================
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# Maven / Gradle
+target/
+build/
+
+# ========================
+# IDE Files
+# ========================
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+*.launch
+
+# VS Code
+.vscode/
+
+# ========================
+# WebDriver Binaries
+# ========================
+chromedriver*
+geckodriver*
+msedgedriver*
+
+# ========================
+# OS Generated Files
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========================
+# Other
+# ========================
+*.tmp
+*.bak
