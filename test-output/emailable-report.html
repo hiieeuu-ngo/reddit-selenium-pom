@@ -8,39 +8,37 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">RedditTests</th></tr>
-<tr><td><a href="#t0">ChromeTests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">5,316</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">FirefoxTests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">8,691</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">14,007</th><th colspan="2"></th></tr>
+<tr><th colspan="8">RedditTestSuite</th></tr>
+<tr><td><a href="#t0">Chrome_Tests</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">6,872</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Firefox_Tests</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">12,693</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">19,565</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RedditTests</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ChromeTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.RedditLoginTest</td><td><a href="#m0">testLogin</a></td><td rowspan="1">1758676430225</td><td rowspan="1">10</td></tr><tr><th colspan="4">ChromeTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.RedditTitleTest</td><td><a href="#m1">testPageTitle</a></td><td rowspan="1">1758676428854</td><td rowspan="1">9</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">FirefoxTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.RedditLoginTest</td><td><a href="#m2">testLogin</a></td><td rowspan="1">1758676433171</td><td rowspan="1">14</td></tr><tr><th colspan="4">FirefoxTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.RedditTitleTest</td><td><a href="#m3">testPageTitle</a></td><td rowspan="1">1758676430206</td><td rowspan="1">4</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RedditTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrome_Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.RedditLoginTest</td><td><a href="#m0">testLogin</a></td><td rowspan="1">1758720552145</td><td rowspan="1">74</td></tr><tr><th colspan="4">Chrome_Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.RedditHomePageTest</td><td><a href="#m1">testLoginLinkVisible</a></td><td rowspan="1">1758720553902</td><td rowspan="1">100</td></tr><tr class="passedodd"><td rowspan="1">tests.RedditTitleTest</td><td><a href="#m2">testPageTitle</a></td><td rowspan="1">1758720549969</td><td rowspan="1">34</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Firefox_Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.RedditLoginTest</td><td><a href="#m3">testLogin</a></td><td rowspan="1">1758720554805</td><td rowspan="1">164</td></tr><tr><th colspan="4">Firefox_Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.RedditHomePageTest</td><td><a href="#m4">testLoginLinkVisible</a></td><td rowspan="1">1758720559346</td><td rowspan="1">5</td></tr><tr class="passedodd"><td rowspan="1">tests.RedditTitleTest</td><td><a href="#m5">testPageTitle</a></td><td rowspan="1">1758720551243</td><td rowspan="1">3</td></tr></tbody>
 </table>
-<h2>ChromeTests</h2><h3 id="m0">tests.RedditLoginTest#testLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Could not find shadow element: shreddit-app &gt; auth-flow-manager &gt; faceplate-partial &gt; auth-flow-login &gt; faceplate-tabpanel &gt; faceplate-form#login &gt; auth-flow-modal &gt; faceplate-text-input#login-username &gt; input
-	at pages.RedditLoginPage.getShadowElement(RedditLoginPage.java:49)
-	at pages.RedditLoginPage.getUsernameField(RedditLoginPage.java:56)
-	at pages.RedditLoginPage.enterUsername(RedditLoginPage.java:75)
-	at pages.RedditLoginPage.login(RedditLoginPage.java:92)
-	at tests.RedditLoginTest.testLogin(RedditLoginTest.java:36)
+<h2>Chrome_Tests</h2><h3 id="m0">tests.RedditLoginTest#testLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Could not find shadow element: shreddit-app &gt; auth-flow-manager &gt; faceplate-partial &gt; auth-flow-login &gt; faceplate-tabpanel &gt; faceplate-form#login &gt; auth-flow-modal &gt; faceplate-text-input#login-username &gt; input
+	at pages.RedditLoginPage.getShadowElement(RedditLoginPage.java:45)
+	at pages.RedditLoginPage.enterUsername(RedditLoginPage.java:52)
+	at tests.RedditLoginTest.testLogin(RedditLoginTest.java:15)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 ... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.RedditTitleTest#testPageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>FirefoxTests</h2><h3 id="m2">tests.RedditLoginTest#testLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Could not find shadow element: shreddit-app &gt; auth-flow-manager &gt; faceplate-partial &gt; auth-flow-login &gt; faceplate-tabpanel &gt; faceplate-form#login &gt; auth-flow-modal &gt; faceplate-text-input#login-username &gt; input
-	at pages.RedditLoginPage.getShadowElement(RedditLoginPage.java:49)
-	at pages.RedditLoginPage.getUsernameField(RedditLoginPage.java:56)
-	at pages.RedditLoginPage.enterUsername(RedditLoginPage.java:75)
-	at pages.RedditLoginPage.login(RedditLoginPage.java:92)
-	at tests.RedditLoginTest.testLogin(RedditLoginTest.java:36)
+<h3 id="m1">tests.RedditHomePageTest#testLoginLinkVisible</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.RedditTitleTest#testPageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Firefox_Tests</h2><h3 id="m3">tests.RedditLoginTest#testLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Could not find shadow element: shreddit-app &gt; auth-flow-manager &gt; faceplate-partial &gt; auth-flow-login &gt; faceplate-tabpanel &gt; faceplate-form#login &gt; auth-flow-modal &gt; faceplate-text-input#login-username &gt; input
+	at pages.RedditLoginPage.getShadowElement(RedditLoginPage.java:45)
+	at pages.RedditLoginPage.enterUsername(RedditLoginPage.java:52)
+	at tests.RedditLoginTest.testLogin(RedditLoginTest.java:15)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 ... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.RedditTitleTest#testPageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.RedditHomePageTest#testLoginLinkVisible</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.RedditTitleTest#testPageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

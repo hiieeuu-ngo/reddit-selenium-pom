@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 23 21:13:45 EDT 2025</td>
+<td>Started on:</td><td>Wed Sep 24 09:17:06 EDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5316 ms)</td>
+<tr><td>Total time:</td><td>34 seconds (34917 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,23 +77,37 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.RedditLoginTest.testLogin()'><b>testLogin</b><br>Test class: tests.RedditLoginTest</td>
-<td><div><pre>java.lang.RuntimeException: Could not find shadow element: shreddit-app &gt; auth-flow-manager &gt; faceplate-partial &gt; auth-flow-login &gt; faceplate-tabpanel &gt; faceplate-form#login &gt; auth-flow-modal &gt; faceplate-text-input#login-username &gt; input
-	at pages.RedditLoginPage.getShadowElement(RedditLoginPage.java:49)
-	at pages.RedditLoginPage.getUsernameField(RedditLoginPage.java:56)
-	at pages.RedditLoginPage.enterUsername(RedditLoginPage.java:75)
-	at pages.RedditLoginPage.login(RedditLoginPage.java:92)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for shadow element located by path: shreddit-app &gt; auth-flow-manager &gt; faceplate-partial &gt; auth-flow-login &gt; faceplate-tabpanel &gt; faceplate-form#login &gt; auth-flow-modal &gt; faceplate-text-input#login-username &gt; input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.185, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\hiiee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50620}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50620/devtoo..., se:cdpVersion: 140.0.7339.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 636e8585d17be0d24698445f85f10002
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.RedditLoginPage.getShadowElement(RedditLoginPage.java:25)
+	at pages.RedditLoginPage.getUsernameField(RedditLoginPage.java:53)
+	at pages.RedditLoginPage.enterUsername(RedditLoginPage.java:78)
+	at pages.RedditLoginPage.login(RedditLoginPage.java:90)
 	at tests.RedditLoginTest.testLogin(RedditLoginTest.java:36)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1649284713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1649284713'><pre>java.lang.RuntimeException: Could not find shadow element: shreddit-app &gt; auth-flow-manager &gt; faceplate-partial &gt; auth-flow-login &gt; faceplate-tabpanel &gt; faceplate-form#login &gt; auth-flow-modal &gt; faceplate-text-input#login-username &gt; input
-	at pages.RedditLoginPage.getShadowElement(RedditLoginPage.java:49)
-	at pages.RedditLoginPage.getUsernameField(RedditLoginPage.java:56)
-	at pages.RedditLoginPage.enterUsername(RedditLoginPage.java:75)
-	at pages.RedditLoginPage.login(RedditLoginPage.java:92)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1860496956", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1860496956'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for shadow element located by path: shreddit-app &gt; auth-flow-manager &gt; faceplate-partial &gt; auth-flow-login &gt; faceplate-tabpanel &gt; faceplate-form#login &gt; auth-flow-modal &gt; faceplate-text-input#login-username &gt; input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.185, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\hiiee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50620}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50620/devtoo..., se:cdpVersion: 140.0.7339.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 636e8585d17be0d24698445f85f10002
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.RedditLoginPage.getShadowElement(RedditLoginPage.java:25)
+	at pages.RedditLoginPage.getUsernameField(RedditLoginPage.java:53)
+	at pages.RedditLoginPage.enterUsername(RedditLoginPage.java:78)
+	at pages.RedditLoginPage.login(RedditLoginPage.java:90)
 	at tests.RedditLoginTest.testLogin(RedditLoginTest.java:36)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -116,7 +130,7 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>0</td>
+<td>20</td>
 <td>tests.RedditLoginTest@233795b6</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>

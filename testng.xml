@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="RedditTests" parallel="tests" thread-count="2">
-    <test name="ChromeTests">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="RedditTestSuite" parallel="tests" thread-count="2">
+
+    <!-- Run tests on Chrome -->
+    <test name="Chrome_Tests">
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="tests.RedditTitleTest"/>
             <class name="tests.RedditLoginTest"/>
+            <class name="tests.RedditHomePageTest"/>
         </classes>
     </test>
 
-    <test name="FirefoxTests">
+    <!-- Run tests on Firefox -->
+    <test name="Firefox_Tests">
         <parameter name="browser" value="firefox"/>
         <classes>
             <class name="tests.RedditTitleTest"/>
             <class name="tests.RedditLoginTest"/>
+            <class name="tests.RedditHomePageTest"/>
         </classes>
     </test>
+
 </suite>
+
